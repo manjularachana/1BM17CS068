@@ -15,15 +15,17 @@ def happynumber(n):
         visited.add(a)
 
 lis=[]
+
 for num in range(1,1001):
     #prime number are greater than 1
+    flag=-1
     if num > 1:
         for i in range(2,num):
             if(num%i)==0:
+                flag=1
                 break
-            elif str(num) not in lis:
-
-                lis.append(str(num))
+    if flag==-1:
+        lis.append(num)
 
 fr=open("prime.txt","w")
 for i in lis:

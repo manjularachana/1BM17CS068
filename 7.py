@@ -7,7 +7,7 @@ def happynumber(n):
             '''print "Number is happy!"
             break'''
         return True
-        a = sum(int(c) ** 1 for c in str(a))
+        a = sum(int(c) ** 2 for c in str(a))
         if a in visited:
            '''print "Number is sad!"
             break'''
